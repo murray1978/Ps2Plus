@@ -21,6 +21,49 @@ char escapeMode = 0;
 char previousCmd;
 
 
+//PWM 
+#define PWMOFF 0
+#define PWMON  1
+//What port pin are we using, change this to change ports.
+#define PWM     PORTDbits.RD5 
+#define TRISPWM TRISDbits.TRISD5
+//Period for 490Hz
+unsigned int PWMPeriod = 0;
+//duty
+unsigned int PWMOn;
+
+//Button PWMOn values, %of duty = %of 5V, % of 255 if 8bit duty cycle,
+//We are hoping for the same logic as used in Arduino proof of concept 
+#define LCD_POWER   4           //1.6%
+#define LCD_VOL_UP  84          //33.6%
+#define LCD_MENU    51          //20%
+#define LCD_VOL_DWN 34          //13.6%
+#define LCD_SOURCE  18          //7.2%
+#define LCD_REST    140         //66%    
+
+
+void PwmInit(int idle)
+{
+    //TRIS pin of choice for output
+    TRISPWM = 1;
+    //Setup TMR0 interrupt and initial values,
+    PWMOn = idle;
+    TMR0 = PWMPeriod;
+    //turn on TMR0 interrupt
+}
+
+void PWMButton(int button)
+{
+    //stop TMR0 interrupt
+    PWMOn = button;
+    TMR0 = PWMPeriod;
+    //Start TMR0 interrupt
+    __delay_us(20); //delay long enough for LCD to read button press, and hurt performance.
+    //stop TMR0 interrupt
+    PWMOn = LCD_REST; 
+    //Start TMR0 interrupt
+}
+
 void pollController(char response[20]) {
 
     responseLength = 5;
@@ -375,6 +418,22 @@ void __interrupt() PS2Command() {
         SSP1IF = 0;
 
     }
+    else if(TMR0IF)
+    {
+        //Interrupt handler for pwm
+        
+        if( PWM == PWMON)
+        {
+            PWM = PWMOFF;
+            TMR0 = PWMPeriod - PWMOn;
+        }
+        else
+        {
+            PWM = PWMON;
+            TMR0 = PWMOn;
+        }
+        TMR0IF = 0;
+    }
 
 
 }
@@ -386,7 +445,8 @@ void main(void) {
     picInit();
     adcInit();
     lutInit();
-
+    PwmInit(LCD_REST);
+    
     response[1] = END_HEADER; //Finish header
 
     char slaveSelect;

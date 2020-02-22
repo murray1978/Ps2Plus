@@ -20856,30 +20856,61 @@ char analogMode = 1;
 char escapeMode = 0;
 char previousCmd;
 # 31 "main.c"
-unsigned int PWMPeriod = 0;
+unsigned int PWMPeriod = 1;
 
 unsigned int PWMOn;
 # 45 "main.c"
 void PwmInit(int idle)
 {
 
-    TRISDbits.TRISD5 = 1;
+    TRISDbits.TRISD5 = 0;
 
-    PWMOn = idle;
-    TMR0 = PWMPeriod;
+    PWMOn = 254 - idle;
+    T6TMR = PWMPeriod;
+    T6CLKCON = 0b00000001;
 
+
+    T6HLT = 0b10100000;
+    T6RST = 0b00000011;
+
+    T6CON = 0b11100000;
+    TMR6IE = 1;
+    TMR6IF = 0;
 }
 
-void PWMButton(int button)
+void PWMButton(int value)
 {
 
-    PWMOn = button;
-    TMR0 = PWMPeriod;
+    PWMOn = 256 - value;
+    TMR6IE = 0;
+         if( PORTDbits.RD5 == 1)
+        {
+            PORTDbits.RD5 = 0;
+            T6TMR = PWMPeriod - PWMOn;
+        }
+        else
+        {
+            PORTDbits.RD5 = 1;
+            T6TMR = PWMOn;
+        }
+    TMR6IE = 1;
 
-    _delay((unsigned long)((20)*(32000000/4000000.0)));
 
-    PWMOn = 140;
+    _delay((unsigned long)((3000)*(32000000/4000.0)));
 
+    PWMOn = 256 - 140 ;
+    TMR6IE = 0;
+         if( PORTDbits.RD5 == 1)
+        {
+            PORTDbits.RD5 = 0;
+            T6TMR = PWMPeriod - PWMOn;
+        }
+        else
+        {
+            PORTDbits.RD5 = 1;
+            T6TMR = PWMOn;
+        }
+    TMR6IE = 1;
 }
 
 void pollController(char response[20]) {
@@ -21236,27 +21267,39 @@ void __attribute__((picinterrupt(("")))) PS2Command() {
         SSP1IF = 0;
 
     }
-    else if(TMR0IF)
+    else if(TMR6IF)
     {
 
 
         if( PORTDbits.RD5 == 1)
         {
             PORTDbits.RD5 = 0;
-            TMR0 = PWMPeriod - PWMOn;
+            T6TMR = PWMPeriod - PWMOn;
         }
         else
         {
             PORTDbits.RD5 = 1;
-            TMR0 = PWMOn;
+            T6TMR = PWMOn;
         }
-        TMR0IF = 0;
+        TMR6IF = 0;
     }
 
 
 }
 
+void PWMTestFunc(void)
+{
+    _delay((unsigned long)((3000)*(32000000/4000.0)));
 
+
+
+        PWMButton(4);
+        _delay((unsigned long)((3000)*(32000000/4000.0)));
+        PWMButton(4);
+        _delay((unsigned long)((3000)*(32000000/4000.0)));
+
+
+}
 
 void main(void) {
 
@@ -21264,6 +21307,8 @@ void main(void) {
     adcInit();
     lutInit();
     PwmInit(140);
+
+
 
     response[1] = 0x5A;
 
@@ -21275,6 +21320,7 @@ void main(void) {
 
     while (1) {
 
+        PWMTestFunc();
 
 
         if(digitalStateFirst == 0x7F && digitalStateSecond == 0x5F){

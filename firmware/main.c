@@ -27,8 +27,8 @@ char previousCmd;
 //What port pin are we using, change this to change ports.
 #define PWM     PORTDbits.RD5 
 #define TRISPWM TRISDbits.TRISD5
-//Period for 490Hz
-unsigned int PWMPeriod = 0;
+//Period for 490Hz, should be 5. but see what this does
+unsigned int PWMPeriod = 1;
 //duty
 unsigned int PWMOn;
 
@@ -45,23 +45,54 @@ unsigned int PWMOn;
 void PwmInit(int idle)
 {
     //TRIS pin of choice for output
-    TRISPWM = 1;
+    TRISPWM = 0;
     //Setup TMR0 interrupt and initial values,
-    PWMOn = idle;
-    TMR0 = PWMPeriod;
-    //turn on TMR0 interrupt
+    PWMOn = 254 - idle;
+    T6TMR = PWMPeriod;
+    T6CLKCON = 0b00000001;      //FOsc/4
+    //T0CON1 = 0b01000110;      //fosc/4, sync fosc/4, prescale 64
+    
+    T6HLT = 0b10100000;
+    T6RST = 0b00000011;         //reset bits, not sure on value here, set to TMR6
+    //T0CON0 = 0b10000000;        //enable TMR0, 8Bit timer, 1:1 postscaler
+    T6CON = 0b11100000;         //TMR6 on, 1:1 postscale.  prescale 64
+    TMR6IE = 1;                 //enable TMR0 interrup
+    TMR6IF = 0;                 //clear interrupt flag
 }
 
-void PWMButton(int button)
+void PWMButton(int value)
 {
     //stop TMR0 interrupt
-    PWMOn = button;
-    TMR0 = PWMPeriod;
-    //Start TMR0 interrupt
-    __delay_us(20); //delay long enough for LCD to read button press, and hurt performance.
-    //stop TMR0 interrupt
-    PWMOn = LCD_REST; 
-    //Start TMR0 interrupt
+    PWMOn = 256 - value;
+    TMR6IE = 0;
+         if( PWM == PWMON)
+        {
+            PWM = PWMOFF;
+            T6TMR = PWMPeriod - PWMOn;
+        }
+        else
+        {
+            PWM = PWMON;
+            T6TMR = PWMOn;
+        }
+    TMR6IE = 1;
+    
+    //delay long enough for LCD to read button press, and hurt performance?
+    __delay_ms(3000); 
+    
+    PWMOn = 256 - LCD_REST ;
+    TMR6IE = 0;
+         if( PWM == PWMON)
+        {
+            PWM = PWMOFF;
+            T6TMR = PWMPeriod - PWMOn;
+        }
+        else
+        {
+            PWM = PWMON;
+            T6TMR = PWMOn;
+        }
+    TMR6IE = 1;
 }
 
 void pollController(char response[20]) {
@@ -418,27 +449,39 @@ void __interrupt() PS2Command() {
         SSP1IF = 0;
 
     }
-    else if(TMR0IF)
+    else if(TMR6IF)
     {
         //Interrupt handler for pwm
         
         if( PWM == PWMON)
         {
             PWM = PWMOFF;
-            TMR0 = PWMPeriod - PWMOn;
+            T6TMR = PWMPeriod - PWMOn;
         }
         else
         {
             PWM = PWMON;
-            TMR0 = PWMOn;
+            T6TMR = PWMOn;
         }
-        TMR0IF = 0;
+        TMR6IF = 0;
     }
 
 
 }
 
+void PWMTestFunc(void)
+{
+    __delay_ms(3000);
+    //while(1)
+    //{
+        
+        PWMButton(LCD_POWER);
+        __delay_ms(3000);
+        PWMButton(LCD_POWER);
+        __delay_ms(3000);
 
+    //}
+}
 
 void main(void) {
 
@@ -447,16 +490,19 @@ void main(void) {
     lutInit();
     PwmInit(LCD_REST);
     
+    
+    
     response[1] = END_HEADER; //Finish header
 
     char slaveSelect;
     char slaveSelectStatePrev = 0;
     char count = 0;
     ACK = 1; //Acknowledge is an active low line, so we initialize it high.
-   
+  
     
     while (1) {
-
+        
+        PWMTestFunc();
         
         //L1 L2 Select
         if(digitalStateFirst == 0x7F && digitalStateSecond == 0x5F){ 

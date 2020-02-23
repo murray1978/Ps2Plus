@@ -2016,8 +2016,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 81:     _delay((unsigned long)((3000)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 "83
-[; ;main.c: 83:     PWMOn = 256 - 140 ;
-[e = _PWMOn -> - -> 256 `i -> 140 `i `ui ]
+[; ;main.c: 83:     PWMOn = 256 - 167 ;
+[e = _PWMOn -> - -> 256 `i -> 167 `i `ui ]
 "84
 [; ;main.c: 84:     TMR6IE = 0;
 [e = _TMR6IE -> -> 0 `i `b ]
@@ -2829,14 +2829,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 474:     _delay((unsigned long)((3000)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 "478
-[; ;main.c: 478:         PWMButton(4);
-[e ( _PWMButton (1 -> 4 `i ]
+[; ;main.c: 478:         PWMButton(18);
+[e ( _PWMButton (1 -> 18 `i ]
 "479
 [; ;main.c: 479:         _delay((unsigned long)((3000)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 "480
-[; ;main.c: 480:         PWMButton(4);
-[e ( _PWMButton (1 -> 4 `i ]
+[; ;main.c: 480:         PWMButton(18);
+[e ( _PWMButton (1 -> 18 `i ]
 "481
 [; ;main.c: 481:         _delay((unsigned long)((3000)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
@@ -2861,8 +2861,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 490:     lutInit();
 [e ( _lutInit ..  ]
 "491
-[; ;main.c: 491:     PwmInit(140);
-[e ( _PwmInit (1 -> 140 `i ]
+[; ;main.c: 491:     PwmInit(167);
+[e ( _PwmInit (1 -> 167 `i ]
 "495
 [; ;main.c: 495:     response[1] = 0x5A;
 [e = *U + &U _response * -> -> -> 1 `i `ui `ux -> -> # *U &U _response `ui `ux -> -> 90 `i `uc ]

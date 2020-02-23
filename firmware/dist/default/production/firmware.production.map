@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\firmware.production.sym \
   --cmf=dist/default/production\firmware.production.cmf -z -Q16F18876 \
-  -oC:\Users\murray\AppData\Local\Temp\s5o0.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\murray\AppData\Local\Temp\s5m4.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/firmware.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=02090h-023EFh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
@@ -36,7 +36,7 @@ Linker command line:
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\murray\AppData\Local\Temp\s5o0.o \
+  C:\Users\murray\AppData\Local\Temp\s5m4.o \
   dist/default/production\firmware.production.o 
 
 Object code version is 3.11
@@ -46,7 +46,7 @@ Machine type is 16F18876
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\murray\AppData\Local\Temp\s5o0.o
+C:\Users\murray\AppData\Local\Temp\s5m4.o
                 end_init                            19E      19E        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5    1000E       0

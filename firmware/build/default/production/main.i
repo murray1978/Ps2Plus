@@ -20898,7 +20898,7 @@ void PWMButton(int value)
 
     _delay((unsigned long)((3000)*(32000000/4000.0)));
 
-    PWMOn = 256 - 140 ;
+    PWMOn = 256 - 167 ;
     TMR6IE = 0;
          if( PORTDbits.RD5 == 1)
         {
@@ -21293,9 +21293,9 @@ void PWMTestFunc(void)
 
 
 
-        PWMButton(4);
+        PWMButton(18);
         _delay((unsigned long)((3000)*(32000000/4000.0)));
-        PWMButton(4);
+        PWMButton(18);
         _delay((unsigned long)((3000)*(32000000/4000.0)));
 
 
@@ -21306,7 +21306,7 @@ void main(void) {
     picInit();
     adcInit();
     lutInit();
-    PwmInit(140);
+    PwmInit(167);
 
 
 

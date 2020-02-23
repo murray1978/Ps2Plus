@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\murray\AppData\Local\Temp\s5o0.o
+$C:\Users\murray\AppData\Local\Temp\s5m4.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 19E 19E 2 2
 config CONFIG 0 8007 8007 5 2
@@ -150,50 +150,50 @@ STRING 1000-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\firmware.production.o
-1A0 cinit CODE >6970:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A0 cinit CODE >6973:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A0 cinit CODE >7117:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A3 cinit CODE >7118:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A4 cinit CODE >7122:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A5 cinit CODE >7123:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A6 cinit CODE >7124:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A7 cinit CODE >7125:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A8 cinit CODE >7126:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1A9 cinit CODE >7127:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1AA cinit CODE >7128:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1AB cinit CODE >7129:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1AC cinit CODE >7130:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1AD cinit CODE >7131:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1AE cinit CODE >7132:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1AF cinit CODE >7133:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B2 cinit CODE >7156:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B3 cinit CODE >7157:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B4 cinit CODE >7158:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B5 cinit CODE >7159:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B6 cinit CODE >7160:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B7 cinit CODE >7161:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B8 cinit CODE >7162:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1B9 cinit CODE >7163:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1BA cinit CODE >7164:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1BD cinit CODE >7168:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1BE cinit CODE >7169:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1BF cinit CODE >7170:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C0 cinit CODE >7171:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C1 cinit CODE >7175:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C2 cinit CODE >7176:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C3 cinit CODE >7180:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C4 cinit CODE >7181:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C5 cinit CODE >7182:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C6 cinit CODE >7183:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C7 cinit CODE >7184:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C8 cinit CODE >7185:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1C9 cinit CODE >7186:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1CA cinit CODE >7187:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1CB cinit CODE >7188:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1CE cinit CODE >7194:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1CE cinit CODE >7196:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1CF cinit CODE >7197:C:\Users\murray\AppData\Local\Temp\s5o0.s
-1D0 cinit CODE >7198:C:\Users\murray\AppData\Local\Temp\s5o0.s
+1A0 cinit CODE >6970:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A0 cinit CODE >6973:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A0 cinit CODE >7117:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A3 cinit CODE >7118:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A4 cinit CODE >7122:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A5 cinit CODE >7123:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A6 cinit CODE >7124:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A7 cinit CODE >7125:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A8 cinit CODE >7126:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1A9 cinit CODE >7127:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1AA cinit CODE >7128:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1AB cinit CODE >7129:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1AC cinit CODE >7130:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1AD cinit CODE >7131:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1AE cinit CODE >7132:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1AF cinit CODE >7133:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B2 cinit CODE >7156:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B3 cinit CODE >7157:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B4 cinit CODE >7158:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B5 cinit CODE >7159:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B6 cinit CODE >7160:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B7 cinit CODE >7161:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B8 cinit CODE >7162:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1B9 cinit CODE >7163:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1BA cinit CODE >7164:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1BD cinit CODE >7168:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1BE cinit CODE >7169:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1BF cinit CODE >7170:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C0 cinit CODE >7171:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C1 cinit CODE >7175:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C2 cinit CODE >7176:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C3 cinit CODE >7180:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C4 cinit CODE >7181:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C5 cinit CODE >7182:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C6 cinit CODE >7183:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C7 cinit CODE >7184:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C8 cinit CODE >7185:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1C9 cinit CODE >7186:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1CA cinit CODE >7187:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1CB cinit CODE >7188:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1CE cinit CODE >7194:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1CE cinit CODE >7196:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1CF cinit CODE >7197:C:\Users\murray\AppData\Local\Temp\s5m4.s
+1D0 cinit CODE >7198:C:\Users\murray\AppData\Local\Temp\s5m4.s
 4 intentry CODE >131:C:\Users\Public\Documents\Ps2Plus\firmware\main.c
 6 intentry CODE >133:C:\Users\Public\Documents\Ps2Plus\firmware\main.c
 B intentry CODE >135:C:\Users\Public\Documents\Ps2Plus\firmware\main.c
@@ -690,34 +690,34 @@ FF1 maintext CODE >531:C:\Users\Public\Documents\Ps2Plus\firmware\main.c
 FF4 maintext CODE >532:C:\Users\Public\Documents\Ps2Plus\firmware\main.c
 FF6 maintext CODE >536:C:\Users\Public\Documents\Ps2Plus\firmware\main.c
 FFA maintext CODE >538:C:\Users\Public\Documents\Ps2Plus\firmware\main.c
-DD7 clrtext CODE >7139:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DD7 clrtext CODE >7140:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DD8 clrtext CODE >7141:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DD8 clrtext CODE >7142:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DD9 clrtext CODE >7143:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DDA clrtext CODE >7144:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DDB clrtext CODE >7145:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DDC clrtext CODE >7146:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DDD clrtext CODE >7147:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DDE clrtext CODE >7148:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DDF clrtext CODE >7149:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE0 clrtext CODE >7150:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE1 clrtext CODE >7151:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE2 clrtext CODE >7152:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE3 inittext CODE >7100:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE3 inittext CODE >7101:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE4 inittext CODE >7102:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE4 inittext CODE >7103:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE5 inittext CODE >7104:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE6 inittext CODE >7105:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE7 inittext CODE >7106:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE8 inittext CODE >7107:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DE9 inittext CODE >7108:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DEA inittext CODE >7109:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DEB inittext CODE >7110:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DEC inittext CODE >7111:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DED inittext CODE >7112:C:\Users\murray\AppData\Local\Temp\s5o0.s
-DEE inittext CODE >7113:C:\Users\murray\AppData\Local\Temp\s5o0.s
+DD7 clrtext CODE >7139:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DD7 clrtext CODE >7140:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DD8 clrtext CODE >7141:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DD8 clrtext CODE >7142:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DD9 clrtext CODE >7143:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DDA clrtext CODE >7144:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DDB clrtext CODE >7145:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DDC clrtext CODE >7146:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DDD clrtext CODE >7147:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DDE clrtext CODE >7148:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DDF clrtext CODE >7149:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE0 clrtext CODE >7150:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE1 clrtext CODE >7151:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE2 clrtext CODE >7152:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE3 inittext CODE >7100:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE3 inittext CODE >7101:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE4 inittext CODE >7102:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE4 inittext CODE >7103:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE5 inittext CODE >7104:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE6 inittext CODE >7105:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE7 inittext CODE >7106:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE8 inittext CODE >7107:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DE9 inittext CODE >7108:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DEA inittext CODE >7109:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DEB inittext CODE >7110:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DEC inittext CODE >7111:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DED inittext CODE >7112:C:\Users\murray\AppData\Local\Temp\s5m4.s
+DEE inittext CODE >7113:C:\Users\murray\AppData\Local\Temp\s5m4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -755,10 +755,10 @@ _WPUB F44 0 ABS 0 - dist/default/production\firmware.production.o
 _WPUC F4F 0 ABS 0 - dist/default/production\firmware.production.o
 _WPUD F5A 0 ABS 0 - dist/default/production\firmware.production.o
 _WPUE F65 0 ABS 0 - dist/default/production\firmware.production.o
-___sp 0 0 STACK 2 stack C:\Users\murray\AppData\Local\Temp\s5o0.o
+___sp 0 0 STACK 2 stack C:\Users\murray\AppData\Local\Temp\s5m4.o
 _main 1F42 0 CODE 0 maintext dist/default/production\firmware.production.o
 btemp 7E 0 ABS 0 - dist/default/production\firmware.production.o
-start 33C 0 CODE 0 init C:\Users\murray\AppData\Local\Temp\s5o0.o
+start 33C 0 CODE 0 init C:\Users\murray\AppData\Local\Temp\s5m4.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\firmware.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\firmware.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
@@ -773,12 +773,12 @@ __size_of_readController 0 0 ABS 0 - dist/default/production\firmware.production
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
 _previousCmd 6E 0 BANK0 1 bssBANK0 dist/default/production\firmware.production.o
 __end_of_PWMButton 1F42 0 CODE 0 text20 dist/default/production\firmware.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5o0.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5o0.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5o0.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5o0.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5o0.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5o0.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5m4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5m4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5m4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5m4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5m4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\murray\AppData\Local\Temp\s5m4.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 __size_of_PWMButton 0 0 ABS 0 - dist/default/production\firmware.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\firmware.production.o
@@ -822,8 +822,8 @@ __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\firmware.production.o
 main@slaveSelect 4F 0 BANK0 1 cstackBANK0 dist/default/production\firmware.production.o
 _adcInit 1B9A 0 CODE 0 text17 dist/default/production\firmware.production.o
 __size_of_picInit 0 0 ABS 0 - dist/default/production\firmware.production.o
-___stackhi 23EF 0 ABS 0 - C:\Users\murray\AppData\Local\Temp\s5o0.o
-___stacklo 2090 0 ABS 0 - C:\Users\murray\AppData\Local\Temp\s5o0.o
+___stackhi 23EF 0 ABS 0 - C:\Users\murray\AppData\Local\Temp\s5m4.o
+___stacklo 2090 0 ABS 0 - C:\Users\murray\AppData\Local\Temp\s5m4.o
 eepromRead@address 21 0 BANK0 1 cstackBANK0 dist/default/production\firmware.production.o
 __end_of_readControllerAnalog EE6 0 CODE 0 text1 dist/default/production\firmware.production.o
 _eepromWrite 1D1E 0 CODE 0 text15 dist/default/production\firmware.production.o
@@ -863,7 +863,7 @@ _TMR6IE 38D5 0 ABS 0 - dist/default/production\firmware.production.o
 _TMR6IF 3885 0 ABS 0 - dist/default/production\firmware.production.o
 __size_of_ppsUnlock 0 0 ABS 0 - dist/default/production\firmware.production.o
 _readADC FA6 0 CODE 0 text14 dist/default/production\firmware.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\murray\AppData\Local\Temp\s5o0.o
+___int_sp 0 0 STACK 2 stack C:\Users\murray\AppData\Local\Temp\s5m4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1047,7 +1047,7 @@ _IndexDigitalByte2 A0 0 BANK1 1 bssBANK1 dist/default/production\firmware.produc
 __end_of_Map 1D1E 0 CODE 0 text9 dist/default/production\firmware.production.o
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\firmware.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\murray\AppData\Local\Temp\s5o0.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\murray\AppData\Local\Temp\s5m4.o
 _T6CLKCON 29C 0 ABS 0 - dist/default/production\firmware.production.o
 _readController A48 0 CODE 0 text13 dist/default/production\firmware.production.o
 _PWMTestFunc 1DD6 0 CODE 0 text19 dist/default/production\firmware.production.o

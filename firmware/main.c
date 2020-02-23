@@ -39,7 +39,7 @@ unsigned int PWMOn;
 #define LCD_MENU    51          //20%
 #define LCD_VOL_DWN 34          //13.6%
 #define LCD_SOURCE  18          //7.2%
-#define LCD_REST    140         //66%    
+#define LCD_REST    167         //66%    
 
 
 void PwmInit(int idle)
@@ -475,9 +475,9 @@ void PWMTestFunc(void)
     //while(1)
     //{
         
-        PWMButton(LCD_POWER);
+        PWMButton(LCD_SOURCE);
         __delay_ms(3000);
-        PWMButton(LCD_POWER);
+        PWMButton(LCD_SOURCE);
         __delay_ms(3000);
 
     //}

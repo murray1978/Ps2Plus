@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Fri Feb 21 13:50:09 2020
+                                                                                               Sat Feb 22 09:32:06 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16F18876
@@ -4100,8 +4100,8 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   4081  0FA7  3181  21D2  318F   	fcall	_lutInit
   4082  0FAA                     l3063:	
   4083                           
-  4084                           ;main.c: 491:     PwmInit(140);
-  4085  0FAA  308C               	movlw	140
+  4084                           ;main.c: 491:     PwmInit(167);
+  4085  0FAA  30A7               	movlw	167
   4086  0FAB  0020               	movlb	0	; select bank0
   4087  0FAC  00A0               	movwf	PwmInit@idle
   4088  0FAD  3000               	movlw	0
@@ -7573,8 +7573,8 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   7451  0EF7  3200               	nop2
   7452  0EF8                     l2901:	
   7453                           
-  7454                           ;main.c: 478:         PWMButton(4);
-  7455  0EF8  3004               	movlw	4
+  7454                           ;main.c: 478:         PWMButton(18);
+  7455  0EF8  3012               	movlw	18
   7456  0EF9  0020               	movlb	0	; select bank0
   7457  0EFA  00A0               	movwf	PWMButton@value
   7458  0EFB  3000               	movlw	0
@@ -7598,8 +7598,8 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   7476  0F0B  2F06               	goto	u2267
   7477  0F0C  3200               	nop2
   7478                           
-  7479                           ;main.c: 480:         PWMButton(4);
-  7480  0F0D  3004               	movlw	4
+  7479                           ;main.c: 480:         PWMButton(18);
+  7480  0F0D  3012               	movlw	18
   7481  0F0E  0020               	movlb	0	; select bank0
   7482  0F0F  00A0               	movwf	PWMButton@value
   7483  0F10  3000               	movlw	0
@@ -7747,8 +7747,8 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   7619  0F87  2F82               	goto	u2287
   7620  0F88  3200               	nop2
   7621                           
-  7622                           ;main.c: 83:     PWMOn = 256 - 140 ;
-  7623  0F89  3074               	movlw	116
+  7622                           ;main.c: 83:     PWMOn = 256 - 167 ;
+  7623  0F89  3059               	movlw	89
   7624  0F8A  00F5               	movwf	_PWMOn
   7625  0F8B  3000               	movlw	0
   7626  0F8C  00F6               	movwf	_PWMOn+1
@@ -9635,7 +9635,7 @@ BANK25               0      0       0      57        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Fri Feb 21 13:50:09 2020
+Symbol Table                                                                                   Sat Feb 22 09:32:06 2020
 
                   __CFG_CP$OFF 0000                   ___awdiv@sign 002C            ___wmul@multiplicand 0022  
                   __CFG_LVP$ON 0000                            l110 0F9A                            l112 0FA0  
